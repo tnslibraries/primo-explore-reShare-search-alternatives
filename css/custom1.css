@@ -1,0 +1,125 @@
+prm-search-bar {
+  padding-bottom: 58.5px;
+}
+.__sm prm-search-bar {
+  padding-bottom: 49.5px;
+}
+.__xs prm-search-bar {
+  padding-bottom: 36px;
+}
+search-bar-sub-menu ul {
+  margin: 0;
+}
+search-bar-sub-menu ul li {
+  display: inline;
+  list-style: none;
+  padding: 0;
+}
+search-bar-sub-menu div.search-bar-sub-menu {
+  background-color: #CCD0D5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+}
+search-bar-sub-menu .md-button.md-small {
+  font-size: .75em;
+  min-width: 42px;
+  font-weight: bold;
+}
+
+.searchAlternatives {
+  color: white;
+  left: 70px;
+}
+.searchAlternatives > div:first-child {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin:1em auto 0;
+}
+
+@media only screen and (max-width: 1920px) {
+  .searchAlternatives > div:first-child {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .searchAlternatives > div:first-child {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1275px) {
+  .searchAlternatives > div:first-child {
+    width: 100%;
+  }
+}
+
+.searchAlternatives .md-button {
+  min-height: 30px;
+}
+
+.searchAlternatives .md-button div {
+  padding: 6px 0;
+}
+
+.worldcatLogo::before {
+  max-height: 18px;
+  background-image: url("../img/worldcat.png");
+  background-position:0px ;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  content: "\00a0";
+  white-space: pre-wrap;
+  display: block;
+  overflow: visible;
+  width: 98px;
+}
+
+.scholarLogo::before {
+  background-image: url("../img/scholar.png");
+  max-height: 18px;
+  background-position:0px;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  content: "\00a0";
+  white-space: pre-wrap;
+  display: block;
+  width: 115px;
+}
+
+.yewnoLogo::before {
+  background-image: url("../img/yewno.png");
+  max-height: 18px;
+  background-position:0px;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  content: "\00a0";
+  white-space: pre-wrap;
+  display: block;
+  width: 130px;
+}
+
+prm-search-bar .layout-fill {
+  height: auto;
+  min-height: auto;
+}
+
+.md-button.md-raised:hover, .md-button.md-raised:active {
+   background: rgba(255, 255, 255, 0.7); 
+
+}
+
+search-alternatives .md-button:hover:not([disabled]) {
+  background-color: transparent;
+}
+
+.hideSearchBar {
+  visibility:hidden;
+}
